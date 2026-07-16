@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOJO - Restaurant Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 to-purple-800 min-h-screen flex items-center justify-center p-4" 
+      oncontextmenu="return false;" onkeydown="return false;">
+
+    <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md text-center">
+        <h1 class="text-4xl font-bold text-indigo-900 mb-2">JOJO</h1>
+        <p class="text-gray-600 mb-6">Partner with us and digitize your cafe!</p>
+        
+        <form class="space-y-4">
+            <input type="text" placeholder="Hotel / Cafe Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <input type="email" placeholder="Email Address" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <input type="text" placeholder="Mobile Number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            
+            <!-- Razorpay Payment Button -->
+            <a href="https://rzp.io/rzp/OytUllX" 
+               class="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg text-lg transition duration-300 shadow-lg">
+               Pay ₹499 & Register
+            </a>
+        </form>
+
+        <p class="text-xs text-gray-400 mt-6">Trusted by 1 Lakh+ Cafe Owners | 1 Million+ Customers</p>
+    </div>
+
+    <!-- Security Script -->
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73)) {
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>
